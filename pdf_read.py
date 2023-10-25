@@ -92,3 +92,15 @@ print(Type + '\n')
 print (text_box)
 print ("Resultado tested components")
 TestedCmp = get_from_Box("TESTED COMPONENTS", "TEST METHOD", text_box)
+
+
+import glob
+
+folder_path = '/path/to/your/folder'  # Replace with the actual folder path
+
+# Get a list of files with a ".txt" extension in the folder
+files = glob.glob(os.path.join(folder_path, '*.txt'))
+
+print("List of .txt files:")
+for file in files:
+    print(file)
